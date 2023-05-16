@@ -1,0 +1,34 @@
+15-May-2023 05:27:46.646 INFO [http-nio-8080-exec-13] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+15-May-2023 05:27:46.647 INFO [http-nio-8080-exec-13] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Global resources are available
+15-May-2023 05:27:46.658 INFO [http-nio-8080-exec-13] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+15-May-2023 07:47:57.226 INFO [http-nio-8080-exec-11] org.apache.catalina.core.ApplicationContext.log Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+15-May-2023 07:47:57.226 INFO [http-nio-8080-exec-11] org.apache.catalina.core.ApplicationContext.log Manager: init: Global resources are available
+15-May-2023 07:47:57.227 INFO [http-nio-8080-exec-11] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+15-May-2023 07:47:57.236 INFO [http-nio-8080-exec-12] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/maven-web-app'
+15-May-2023 07:47:57.236 INFO [http-nio-8080-exec-12] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/ec2-user/apache-tomcat-9.0.75/webapps/maven-web-app.war
+15-May-2023 07:48:08.204 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+15-May-2023 08:13:04.128 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+15-May-2023 08:15:21.035 INFO [http-nio-8080-exec-15] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+15-May-2023 08:15:24.591 INFO [http-nio-8080-exec-14] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+15-May-2023 08:15:24.923 INFO [http-nio-8080-exec-11] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+15-May-2023 08:15:25.303 INFO [http-nio-8080-exec-12] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+15-May-2023 09:01:59.238 INFO [http-nio-8080-exec-11] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+15-May-2023 09:01:59.246 INFO [http-nio-8080-exec-16] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+15-May-2023 09:01:59.248 INFO [http-nio-8080-exec-17] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/maven-web-app'
+15-May-2023 09:01:59.776 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/maven-web-app'
+15-May-2023 09:01:59.776 INFO [http-nio-8080-exec-18] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/ec2-user/apache-tomcat-9.0.75/webapps/maven-web-app.war
+15-May-2023 09:05:26.729 INFO [http-nio-8080-exec-21] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+15-May-2023 09:05:26.731 INFO [http-nio-8080-exec-22] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+15-May-2023 09:05:26.734 INFO [http-nio-8080-exec-23] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/maven-web-app'
+15-May-2023 09:05:27.245 INFO [http-nio-8080-exec-24] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/maven-web-app'
+15-May-2023 09:05:27.245 INFO [http-nio-8080-exec-24] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/ec2-user/apache-tomcat-9.0.75/webapps/maven-web-app.war
+15-May-2023 09:14:37.381 INFO [http-nio-8080-exec-29] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+15-May-2023 09:14:37.383 INFO [http-nio-8080-exec-30] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+15-May-2023 09:14:37.391 INFO [http-nio-8080-exec-31] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/maven-web-app'
+15-May-2023 09:14:37.903 INFO [http-nio-8080-exec-33] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/maven-web-app'
+15-May-2023 09:14:37.903 INFO [http-nio-8080-exec-33] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/ec2-user/apache-tomcat-9.0.75/webapps/maven-web-app.war
+15-May-2023 09:40:15.481 INFO [http-nio-8080-exec-46] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+15-May-2023 09:40:15.486 INFO [http-nio-8080-exec-38] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+15-May-2023 09:40:15.488 INFO [http-nio-8080-exec-39] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/maven-web-app'
+15-May-2023 09:40:16.004 INFO [http-nio-8080-exec-42] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/maven-web-app'
+15-May-2023 09:40:16.006 INFO [http-nio-8080-exec-42] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /home/ec2-user/apache-tomcat-9.0.75/webapps/maven-web-app.war

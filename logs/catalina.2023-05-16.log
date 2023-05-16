@@ -1,0 +1,41 @@
+16-May-2023 13:44:33.392 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.75
+16-May-2023 13:44:33.503 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          May 4 2023 13:04:05 UTC
+16-May-2023 13:44:33.504 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.75.0
+16-May-2023 13:44:33.504 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+16-May-2023 13:44:33.504 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.1.25-37.47.amzn2023.x86_64
+16-May-2023 13:44:33.504 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+16-May-2023 13:44:33.505 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64/jre
+16-May-2023 13:44:33.505 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_372-b07
+16-May-2023 13:44:33.505 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+16-May-2023 13:44:33.505 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/ec2-user/apache-tomcat-9.0.75
+16-May-2023 13:44:33.505 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/ec2-user/apache-tomcat-9.0.75
+16-May-2023 13:44:33.523 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/ec2-user/apache-tomcat-9.0.75/conf/logging.properties
+16-May-2023 13:44:33.523 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-May-2023 13:44:33.523 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+16-May-2023 13:44:33.523 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+16-May-2023 13:44:33.523 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+16-May-2023 13:44:33.524 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+16-May-2023 13:44:33.524 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/ec2-user/apache-tomcat-9.0.75
+16-May-2023 13:44:33.524 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/ec2-user/apache-tomcat-9.0.75
+16-May-2023 13:44:33.524 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/ec2-user/apache-tomcat-9.0.75/temp
+16-May-2023 13:44:33.532 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+16-May-2023 13:44:35.300 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+16-May-2023 13:44:35.373 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [2681] milliseconds
+16-May-2023 13:44:35.477 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+16-May-2023 13:44:35.478 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.75]
+16-May-2023 13:44:35.518 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/ec2-user/apache-tomcat-9.0.75/webapps/jsp_app.war]
+16-May-2023 13:44:36.112 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/ec2-user/apache-tomcat-9.0.75/webapps/jsp_app.war] has finished in [592] ms
+16-May-2023 13:44:36.115 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/ec2-user/apache-tomcat-9.0.75/webapps/maven-web-app.war]
+16-May-2023 13:44:36.174 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/ec2-user/apache-tomcat-9.0.75/webapps/maven-web-app.war] has finished in [59] ms
+16-May-2023 13:44:36.176 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ec2-user/apache-tomcat-9.0.75/webapps/ROOT]
+16-May-2023 13:44:36.203 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ec2-user/apache-tomcat-9.0.75/webapps/ROOT] has finished in [17] ms
+16-May-2023 13:44:36.204 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ec2-user/apache-tomcat-9.0.75/webapps/docs]
+16-May-2023 13:44:36.261 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ec2-user/apache-tomcat-9.0.75/webapps/docs] has finished in [56] ms
+16-May-2023 13:44:36.264 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ec2-user/apache-tomcat-9.0.75/webapps/examples]
+16-May-2023 13:44:37.092 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ec2-user/apache-tomcat-9.0.75/webapps/examples] has finished in [829] ms
+16-May-2023 13:44:37.094 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ec2-user/apache-tomcat-9.0.75/webapps/host-manager]
+16-May-2023 13:44:37.145 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ec2-user/apache-tomcat-9.0.75/webapps/host-manager] has finished in [50] ms
+16-May-2023 13:44:37.146 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/ec2-user/apache-tomcat-9.0.75/webapps/manager]
+16-May-2023 13:44:37.188 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/ec2-user/apache-tomcat-9.0.75/webapps/manager] has finished in [42] ms
+16-May-2023 13:44:37.198 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+16-May-2023 13:44:37.256 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1882] milliseconds
