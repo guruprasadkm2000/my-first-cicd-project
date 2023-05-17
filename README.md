@@ -19,6 +19,9 @@ Apache Tomcat
 
 Overall, Apache Tomcat is a popular choice for deploying Java web applications, providing a reliable and scalable platform for running servlets, JSP pages, and other Java-based web components.
 
+
+
+
 How to install on Amazon Linux 2 (EC2 Instance)
 (Before installing tomcat, we need to install java jdk)
 sudo yum update
@@ -67,12 +70,6 @@ Click on Host Manager to deploy the application (It will ask credentials, enter 
 Admin 
 P > admin
 
-
-
-
-
-
-
 Go to maven web application and package that application as war file (war file will be created in target folder) 
 
 We can deploy Maven Web Application ‘war’ file into Tomcat Server from Host Manager Console 
@@ -104,6 +101,8 @@ Configure Inbound rule to allow 8080 protocols in the instance.
 To unlock Jenkins, we need admin password.
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
+
+ 
 ============================
 Jenkins Job Creation Process
 =============================
@@ -129,14 +128,18 @@ Note: Git s/w will be available by default in Jenkins Gloabl Tools Configuration
 9) Run the Job
 10) See Tomcat Dashboard (Application should display) and access the application
 
+
+ 
 =================
 Poll SCM
-==================
+=================
 -> Click on Job name
 -> Click On Configure
 -> Configure Poll SCM with cron expression as ( * * * * *)
 -> Every minute it will check for code changes, if code changes available then jenkins job will run
 
+ 
+ 
 ===================
 Infrastructure Setup 
 ====================
@@ -145,6 +148,7 @@ Infrastructure Setup
 -> Clone Git Hub Repository
 
 
+ 
 ===========================
 Build & Deployment Process
 ===========================
